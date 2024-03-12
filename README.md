@@ -1,9 +1,9 @@
 # SelfStudyJava
 #### Java 소스코드 저장소
 
-## 목차(수정중)
+## 목차(3부터 수정중)
 ### ch01 - [변수](https://github.com/BangYunseo/TIL/blob/main/Language/Java/ch01_Variable.md)
-### ch02 - [C++기초](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch02_BasicC++.md)
+### ch02 - [기본 타입](https://github.com/BangYunseo/TIL/blob/main/Language/Java/ch02_PrimitiveType.md)
 ### ch03 - [클래스와 객체](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch03_ClassAndObject.md)
 ### ch04 - [객체포인터](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch04_ObjectPointer.md)
 ### ch05 - [함수와 참조](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch05_FunctionAndReference.md)
