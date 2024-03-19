@@ -26,8 +26,8 @@ public class PromotionExample {
 }
 
 // 출력 예시
-// intValue: 10
-// 가의 유니코드: 44032
-// longValue: 50
-// floatValue: 100.0
-// doubleValue: 100.5
+// intValue : 10
+// 가의 유니코드 : 44032
+// longValue : 50
+// floatValue : 100.0
+// doubleValue : 100.5
