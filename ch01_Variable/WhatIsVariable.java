@@ -44,6 +44,9 @@ class Main {
 		// 출력 예시
 		// 5
 
+
+	    	// ex 4 : time converter variable
+	    
 		int h = 3, m = 5;
 		System.out.println(h + "시간 " + m + "분");
 		int total = h * 60 + m;
