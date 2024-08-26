@@ -4,6 +4,7 @@ import java.io.*;
 
 class Main {
     public static void main(String[] args) {
+	    	// ex 1 : int variable
         	int x = 3;
 		int y = 5;
 		System.out.println("x : " + x + ", y : " + y);
