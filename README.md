@@ -10,14 +10,5 @@
 ### ch06 - [복사 생성자](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch06_CopyConstructor.md)
 ### ch07 - [함수 중복](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch07_FunctionOverloading.md)
 ### ch08 - [Static](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch08_Static.md)
-### ch09 - [Friend](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch09_Friend.md)
-### ch10 - [연산자 중복](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch10_OperatorOverloadingFunction.md)
-### ch11 - [상속](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch11_Inheritance.md)
-### ch12 - [가상함수와 추상클래스](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch12_VirtualFunctionAndAbstractClass.md)
-### ch13 - [템플릿](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch13_Template.md)
-### ch14 - [표준 탬플릿 라이브러리](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch14_StandardTemplateLibrary.md)
-### ch15 - [C++ 입출력 시스템](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch15_C%2B%2BIOSystem.md)
-### ch16 - [C++ 파일 입출력](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch16_C%2B%2BFileIO.md)
-### ch17 - [예외처리](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch17_ExceptionHandling.md)
-### ch18 - [C와 링크](https://github.com/BangYunseo/TIL/blob/main/Language/Cpp/ch18_LinkingWithC.md)
+
 
