@@ -1,7 +1,7 @@
 # SelfStudyJava
 #### Java 소스코드 저장소
 
-## 목차(ch04~)
+## 목차
 ### ch01 - [변수](https://github.com/BangYunseo/TIL/blob/main/Language/Java/ch01_Variable.md)
 ### ch02 - [기본 타입](https://github.com/BangYunseo/TIL/blob/main/Language/Java/ch02_PrimitiveType.md)
 ### ch03 - [타입 변환](https://github.com/BangYunseo/TIL/blob/main/Language/Java/ch03_TypeCasting.md)
