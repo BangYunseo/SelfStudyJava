@@ -4,154 +4,174 @@ import java.io.*;
 
 class Main {
     public static void main(String[] args) {
-	    // ex 1 : Integer Literal
+	    // ex 1 : Promotion
+	    // 자동 타입 변환
 	    
-	    int var1 = 0b1011;		// 2진수		
-	    int var2 = 0206;		// 8진수
-	    int var3 = 365;		// 10진수
-	    int var4 = 0xB3;		// 16진수
+	    byte byteValue = 10;
+	    int intValue = byteValue;
+	    System.out.println("intValue : " + intValue);
+
+	    char charValue = '가';
+	    intValue = charValue;
+	    System.out.println("가의 유니코드 : " + intValue);
 		
-	    System.out.println("var1 : " + var1);
-	    System.out.println("var2 : " + var2);
-	    System.out.println("var3 : " + var3);
-	    System.out.println("var4 : " + var4);
-	    
-	    // 출력 예시
-	    // var1 : 11
-	    // var2 : 134
-	    // var3 : 365
-	    // var4 : 179
-
-
-	    // ex 2 : Byte Type
-	    
-	    byte var5 = -128;
-	    byte var6 = 127;
-	    // byte var3 = 128; 
-	    // Compile Error(Type mismatch: cannot covert from int to byte)
-	    
-	    System.out.println(var5);
-	    System.out.println(var6);
-
-	    // 출력 예시
-	    // -128
-	    // 127
-	    
-
-	    // ex 3 : Long
-	    
-	    long var7 = 10;		
-	    long var8 = 20L;		
-	    // long var3 = 1000000000000;     
-	    // Compile Error
-	    long var9 = 1000000000000L;
+	    intValue = 50;
+	    long longValue = intValue;
+	    System.out.println("longValue : " + longValue);	
 		
-	    System.out.println(var7);
-	    System.out.println(var8);
-	    System.out.println(var9);
-
-	    // 출력 예시
-	    // 10
-	    // 20
-	    // 1000000000000
-
-
-	    // ex 4 : Char
-
-	    char c1 = 'A';          	// 문자 그대로 저장
-	    char c2 = 65;          	// 10진수로 저장
-	    char c3 = '\u0041';    	// 16진수로 저장
-	    
-	    char c4 = '가';         	// 문자 그대로 저장
-	    char c5 = 44032;      	// 10진수로 저장
-	    char c6 = '\uac00';    	// 16진수로 저장
+	    longValue = 100;
+	    float floatValue = longValue; 
+	    System.out.println("floatValue : " + floatValue);
 		
-	    System.out.println(c1);
-	    System.out.println(c2);
-	    System.out.println(c3);
+	    floatValue = 100.5f;
+	    double doubleValue = floatValue;
+	    System.out.println("doubleValue : " + doubleValue);
 	    
-	    System.out.println(c4);
-	    System.out.println(c5);
-	    System.out.println(c6);
+	    // 출력 예시
+	    // intValue : 10
+	    // 가의 유니코드 : 44032
+	    // longValue : 50
+	    // floatValue : 100.0
+	    // doubleValue : 100.5
+
+
+	    // ex 2 : Casting
+	    
+	    int intValue = 44032;
+	    char charValue = (char) intValue;
+	    System.out.println(charValue);
+		
+	    long longValue = 500;
+	    intValue = (int) longValue;
+	    System.out.println(intValue);
+		
+	    double doubleValue = 3.14;
+	    intValue = (int) doubleValue;
+	    System.out.print(intValue);
+	    // 실수형을 정수형으로 변환 시 정수 부분만 출력
 
 	    // 출력 예시
-	    // A
-	    // A
-	    // A
 	    // 가
-	    // 가
-	    // 가
+	    // 500
+	    // 3
+	    
 
-
-	    // ex 5 : String
-
-	    String name = "방윤서";
-	    String job = "게임 클라이언트 프로그래머";
+	    // ex 3 : Byte Operation
+	    
+	    byte result1 = 10 + 20;
+	    System.out.println(result1);
 		
-	    System.out.println(name);
-	    System.out.println(job);
+	    byte x = 10;
+	    byte y = 20;
+	    int result2 = x + y;
+	    System.out.print(result2);
 
 	    // 출력 예시
-	    // 방윤서
-	    // 게임 클라이언트 프로그래머
+	    // 30
+	    // 30
 
 
-	    // ex 6 : Escape
+	    // ex 4 : LongOperation
 
-	    System.out.println("번호\t이름\t직업 ");
-	    System.out.print("행 단위 출력\n");
-	    System.out.println("행 단위 출력");
-	    System.out.println("우리는 \"개발자\" 입니다.");
-	    System.out.println("봄\\여름\\가을\\겨울");
+	    byte value1 = 10;
+	    int value2 = 100;
+	    long value3 = 1000L;
+	    long result = value1 + value2 + value3;
+	    System.out.print(result);
 
 	    // 출력 예시
-	    // 방윤서
-	    // 게임 클라이언트 프로그래머
+	    // 1110
 
 
-	    // ex 7 : Float Type and Double Type
+	    // ex 5 : Operations Promotion
 
-	    // float var1 = 3.14;	
-	    // Compile Error(Type mismatch)
-	    float var10 = 3.14f;
-	    double var11 = 3.14;		
-
-	    float var12 = 0.1234567890123456789f;
-	    double var13 = 0.1234567890123456789;
+	    byte byteValue1 = 10;
+	    byte byteValue2 = 20;
+	    //byte byteValue3 = byteValue1 + byteValue2;   // 컴파일 에러
+	    int intValue1 = byteValue1 + byteValue2;
+	    System.out.println(intValue1);
 		
-	    System.out.println("var10 : " + var10);
-	    System.out.println("var11 : " + var11);
-	    System.out.println("var12 : " + var12);
-	    System.out.println("var13 : " + var13);
+	    char charValue1 = 'A';
+	    char charValue2 = 1;
+	    //char charValue3 = charValue1 + charValue2;   // 컴파일 에러
+	    int intValue2 = charValue1 + charValue2;
+	    System.out.println("유니코드 :" + intValue2);
+	    System.out.println("출력문자 :" + (char)intValue2);
 		
-	    // Using e
-	    double var14 = 3e6;
-	    float var15 = 3e6F;
-	    double var16 = 2e-3;
-	    System.out.println("var14 : " + var14);
-	    System.out.println("var15 : " + var15);
-	    System.out.println("var16 : " + var16);
+	    int intValue3 = 10;
+	    int intValue4 = intValue3/4;
+	    System.out.println(intValue4);
+		
+	    int intValue5 = 10;
+	    //int intValue6 = 10 / 4.0;   //컴파일 에러
+	    double doubleValue = intValue5 / 4.0;
+	    System.out.println(doubleValue);
+		
+	    int x = 1;
+	    int y = 2;
+	    double result = (double) x / y;
+	    System.out.println(result);
 
 	    // 출력 예시
-	    // var10 : 3.14
-	    // var11 : 3.14
-	    // var12 : 0.12345679
-	    // var13 : 0.12345678901234568
-	    // var14 : 3000000.0
-	    // var15 : 3000000.0
-	    // var16 : 0.002
+	    // 30
+	    // 유니코드 : 66
+	    // 출력문자 : B
+	    // 2
+	    // 2.5
+	    // 0.5
 
 
-	    // ex 7 : Boolean
+	    // ex 6 : String Concat
 
-	    boolean stop = true;
-	    if(stop) {
-		    System.out.println("중지합니다.");
-	    } else {
-		    System.out.println("시작합니다.");
-	    }
+	    //숫자 연산
+	    int value = 10 + 2 + 8;
+	    System.out.println("value : " + value);
+		
+	    //결합 연산
+	    String str1 = 10 + 2 + "8";
+	    System.out.println("str1 : " + str1);
+		
+	    String str2 = 10 + "2" + 8;
+	    System.out.println("str2 : " + str2);
+		
+	    String str3 = "10" + 2 + 8;
+	    System.out.println("str3 : " + str3);
+		
+	    String str4 = "10" + (2 + 8);
+	    System.out.println("str4 : " + str4);
 
 	    // 출력 예시
-	    // 중지합니다.
+	    // value : 20
+	    // str1 : 128
+	    // str2 : 1028
+	    // str3 : 1028
+	    // str4 : 1010
+
+
+	    // ex 7 : Conversion
+
+	    int value1 = Integer.parseInt("10");
+		double value2 = Double.parseDouble("3.14");
+		boolean value3 = Boolean.parseBoolean("true");
+		
+		System.out.println("value1 : " + value1);
+		System.out.println("value2 : " + value2);
+		System.out.println("value3 : " + value3);
+		
+		String str1 = String.valueOf(10);
+		String str2 = String.valueOf(3.14);
+		String str3 = String.valueOf(true);		
+		
+		System.out.println("str1 : " + str1);
+		System.out.println("str2 : " + str2);
+		System.out.println("str3 : " + str3);
+
+	    // 출력 예시
+	    // value1 : 10
+	    // value2 : 3.14
+	    // value3 : true
+	    // str1 : 10
+	    // str2 : 3.14
+	    // str3 : true
     }
 }
