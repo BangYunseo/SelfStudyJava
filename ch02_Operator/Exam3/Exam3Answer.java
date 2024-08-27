@@ -1,15 +1,17 @@
-package sec02.verify.exam11;
+import java.util.*;
+import java.lang.*;
+import java.io.*;
 
 import java.util.Scanner;
 
-public class Exam11 {
+class Main {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("아이디:");
+		System.out.print("아이디 : ");
 		String name = scanner.nextLine();
 		
-		System.out.print("패스워드:");
+		System.out.print("패스워드 : ");
 		String strPassword = scanner.nextLine();
 		
 		int password = Integer.parseInt(strPassword);
@@ -18,10 +20,10 @@ public class Exam11 {
 			if(password == 12345) {
 				System.out.println("로그인 성공");
 			} else {
-				System.out.println("로그인 실패:패스워드가 틀림");
+				System.out.println("로그인 실패 : PW ERROR");
 			}
 		} else {
-			System.out.println("로그인 실패:아이디 존재하지 않음");
+			System.out.println("로그인 실패 : ID ERROR");
 		}
 	}
 }
